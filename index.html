@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="sheet.css">
+    <script src = "script.js"></script>
+</head>
+<body onload="onLoad()">
+<p>
+
+<p>
+    <div class="currentGrade" id="title">Grade Calculator</div>
+</p>
+
+
+<!--put into a table-->
+
+<div class="currentGrade">
+<div class="currentGrade"><p>Homework Points &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Homework Weight</p>
+<input type="text" id="homework" value="70,80,90" size="25">
+    <input type="text" id="homeworkWeight" value="30" size="25" onblur="calculateGrade()">
+</div>
+</p>
+
+
+<div class="currentGrade"><p>Classwork Points &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Classwork Weight</p>
+    <input type="text" id="classwork" value="60,100,75" size="25">
+    <input type="text" id="classworkWeight" value="15" size="25" onblur="calculateGrade()">
+</div>
+</p>
+</div>
+
+<div class="currentGrade"><p>Assessment Points &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assessment Weight</p>
+    <input type="text" id="assessment" value="30,40,74,43" size="25">
+    <input type="text" id="assessmentWeight" value="40" size="25" onblur="calculateGrade()">
+</div>
+</p>
+</div>
+
+<div class="currentGrade"><p>&nbsp; Participation Points &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Participation Weight</p>
+    <input type="text" id="participation" value="23,45,63,90,100" size="25">
+    <input type="text" id="participationWeight" value="15" size="25" onblur="calculateGrade()">
+</div>
+</p>
+</div>
+
+</p>
+<p>
+
+<div class="currentGrade">Total weight (must add up to 100%)</div>
+<div class="currentGrade" id="totalWeight"></div>
+</p>
+
+<p class="currentGrade">
+    <button id="calculate" onclick="calculateGrade()">Calculate Grade</button>
+</p>
+<p>
+    <div id="weightedGrade"></div>
+</p>
+</div>
+
+<h1 id="finalHeader">Finals Calculator</h1>
+<p><div class="currentGrade"><p>&nbsp; Grade Desired &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Final Weight</p>
+    <input type="text" id="final" value="93" size="25">
+    <input type="text" id="finalWeight" value="15" size="25">
+</div></p>
+<p class="currentGrade">
+    <button id="finalCalc" onclick="calculateFinal()">Calculate Grade Required</button>
+</p>
+<p>
+    <div class="currentGrade" id="gradeRequired"></div>
+</p>
+
+
+
+
+
+</body>
+</html>
